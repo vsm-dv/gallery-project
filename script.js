@@ -151,11 +151,6 @@ modalImg.addEventListener('dblclick', () => {
     });
 });
 
-
-modal.addEventListener('click', () => {
-    modal.classList.add('hidden');
-});
-
 btnPrevious.addEventListener('click', event => {
     event.stopPropagation();
     if (!favoritesClicked) {
