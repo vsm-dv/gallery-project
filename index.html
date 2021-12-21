@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Picture Gallery</h1>
+        <a href="#">About</a>
+    </header>
+    <div class="menu">
+        <div class="menu_icons_top">
+            <img src="./assets/closed-menu.svg" alt="Closed menu" class="icon open_icon">
+            <div class="icon home_icon brightness">
+                <img src="./assets/active-home.svg" alt="Home">
+                <span class="hidden">Home</span>
+            </div>
+            <div class="icon favorites_icon">
+                <img src="./assets/inactive-like.svg" alt="Favorites">
+                <span class="hidden">Favorites</span>
+            </div>
+        </div>
+        <div class="theme_icon">
+            <img class="btn_theme" src="./assets/light-mode.svg" alt="Theme">
+            <span class="hidden">Light theme</span>
+        </div>
+    </div>
+
+    <main class="main_page">
+        <h2>Home</h2>
+        <div class="main_gallery">
+            <div class="main_gallery_img" data-id="div01">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image01.png" alt="Image 01" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Hamster</span>
+                    <span class="img_date">1 month</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div02">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image02.png" alt="Image 02" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Cat</span>
+                    <span class="img_date">2 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div03">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image03.png" alt="Image 03" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Dog</span>
+                    <span class="img_date">3 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div04">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image04.png" alt="Image 04" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Chimpanzee</span>
+                    <span class="img_date">4 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div05">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image05.png" alt="Image 05" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Butterfly</span>
+                    <span class="img_date">5 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div06">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image06.png" alt="Image 06" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Jaguar</span>
+                    <span class="img_date">6 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div07">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image07.png" alt="Image 07" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Fox</span>
+                    <span class="img_date">7 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div08">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image08.png" alt="Image 08" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Arctic fox</span>
+                    <span class="img_date">8 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div09">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image09.png" alt="Image 09" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Turtle</span>
+                    <span class="img_date">9 months</span>
+                </div>
+            </div>
+            <div class="main_gallery_img" data-id="div10">
+                <img src="./assets/like.svg" alt="like" class="like_icon hidden">
+                <img src="./assets/gallery/image10.png" alt="Image 10" class="gallery_img">
+                <div class="img_text">
+                    <span class="img_title">Lion</span>
+                    <span class="img_date">10 months</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal hidden">
+        <img src="./assets/close-modal.svg" alt="Close" class="modal_close">
+        <div class="modal_img">
+            <img src="./assets/like.svg" alt="like" class="like_icon_modal hidden">
+            <img src="./assets/prev.svg" alt="previous" class="btn_previous">
+            <img src="" alt="image" class="zoom_img">
+            <img src="./assets/next.svg" alt="next" class="btn_next">
+        </div>
+    </div>
+    <main class="favorites_page hidden">
+        <h2>Favorites</h2>
+        <div class="main_favorites_gallery">
+
+        </div>
+    </main>
+</body>
+
+</html>
