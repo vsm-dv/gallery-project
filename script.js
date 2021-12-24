@@ -102,6 +102,10 @@ modalImg.addEventListener('click', event => {
     event.stopPropagation();
 });
 
+closeModal.addEventListener('click', () => {
+    modal.classList.add('hidden');
+});
+
 function checkLikeModal() {
     if (!favoritesClicked) {
         if (!hasLike[indexMain]) {
